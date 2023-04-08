@@ -1,0 +1,22 @@
+.ca-block-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ca-block-timer > div {
+  padding: 10px;
+}
+
+.timer-controls > button {
+  min-width: 98px;
+}
+
+.current-time {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.previous-time {
+  font-size: 1.1em;
+}

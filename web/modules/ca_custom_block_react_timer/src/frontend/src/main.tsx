@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import Timer from "./Timer";
 import './index.css'
+
 
 ReactDOM.createRoot(document.getElementById('ca-react-timer') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Timer />
   </React.StrictMode>,
 )
