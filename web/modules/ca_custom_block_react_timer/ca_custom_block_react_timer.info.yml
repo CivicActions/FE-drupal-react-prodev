@@ -1,0 +1,5 @@
+name: CA Custom Block React Timer
+type: module
+description: Add a React app to a custom block plugin
+package: Custom
+core_version_requirement: ^9 || ^10
