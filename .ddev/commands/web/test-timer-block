@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Description: Run FE tests for the CA Custom Block React Timer module.
+## Usage:test-timer-block
+
 set -eu -o pipefail
 
 MODULE_REACT_DIR='web/modules/custom/ca_custom_block_react_timer/src/frontend'
