@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -eu -o pipefail
+
+MODULE_REACT_DIR='web/modules/ca_custom_block_react_timer/src/frontend'
+
+cd $MODULE_REACT_DIR || exit
+
+npm --loglevel=error install
+
+npm run build --force
+
+drush cr
+
+echo "React block timer build complete."
