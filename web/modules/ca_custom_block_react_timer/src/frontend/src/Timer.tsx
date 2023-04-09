@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {useInterval} from "./hooks/setInterval";
+import {useInterval} from "./hooks/useInterval";
 import TimeDisplay from "./components/TimeDisplay";
 import "./Timer.css"
 
@@ -16,11 +16,11 @@ export default function Timer() {
     setIsTimerRunning(false);
     setPreviousTimeInSeconds(timeInSeconds);
     setTimeInSeconds(0);
-
   };
+
   return (
     <div className="ca-block-timer">
-      <div className="current-time">
+      <div className="current-time" data-testid="current-time">
         <TimeDisplay {...{timeInSeconds}} />
       </div>
       <div className={"timer-controls"}>
@@ -29,7 +29,7 @@ export default function Timer() {
         </button>
         <button onClick={handleReset}>Reset</button>
       </div>
-      <div className={"previous-time"}>
+      <div className="previous-time" data-testid={"previous-time"}>
         Previous: <TimeDisplay timeInSeconds={previousTimeInSeconds} />
       </div>
     </div>
