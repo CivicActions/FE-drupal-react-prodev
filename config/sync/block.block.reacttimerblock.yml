@@ -1,0 +1,20 @@
+uuid: 8dd2e5fe-027d-4ab9-800a-e1500d8a7598
+langcode: en
+status: true
+dependencies:
+  module:
+    - ca_custom_block_react_timer
+  theme:
+    - olivero
+id: reacttimerblock
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: ca_custom_block_react_timer_example
+settings:
+  id: ca_custom_block_react_timer_example
+  label: 'React Timer Block'
+  label_display: visible
+  provider: ca_custom_block_react_timer
+visibility: {  }
