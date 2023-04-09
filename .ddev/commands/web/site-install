@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Description: Perform site install.
+## Usage: site-install
+
+set -eu -o pipefail
+
+drush site:install standard --site-name="ProDev Sprint" -y
+drush en ca_custom_block_react_timer
+drush cr
+
+echo "Site install complete."

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Description: Build CA Custom Block react timer FE app.
+## Usage: build-timer-block
+
 set -eu -o pipefail
 
 MODULE_REACT_DIR='web/modules/custom/ca_custom_block_react_timer/src/frontend'
