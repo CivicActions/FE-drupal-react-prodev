@@ -5,7 +5,7 @@ namespace Drupal\ca_custom_block_react_timer\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides an example block.
+ * Provides custom block to load a React timer app.
  *
  * @Block(
  *   id = "ca_custom_block_react_timer_example",

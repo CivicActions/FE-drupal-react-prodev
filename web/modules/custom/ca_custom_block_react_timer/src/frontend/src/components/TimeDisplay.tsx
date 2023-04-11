@@ -1,3 +1,8 @@
+/**
+ * Formats seconds into a time tag showing total duration in hh:mm:ss format
+ *
+ * @param timeInSeconds - Time to be shown on display represented in seconds
+ */
 export default function TimeDisplay({timeInSeconds}: { timeInSeconds: number }) {
   const [hours, minutes, seconds] = useHoursMinutesSeconds(timeInSeconds);
 
