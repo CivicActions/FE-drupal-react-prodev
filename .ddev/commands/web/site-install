@@ -1,12 +1,34 @@
 #!/bin/bash
 
 ## Description: Perform site install.
-## Usage: site-install
+## Usage: site-install [p1]
 
 set -eu -o pipefail
 
-drush site:install standard --site-name="ProDev Sprint" -y
-drush en ca_custom_block_react_timer
-drush cr
+arg="${1:-null}"
+options=('p1')
+found=false
 
+for i in "${options[@]}"; do
+  if [ $arg = "$i" ]; then
+    found=true
+  fi
+done
+
+if [ "$found" = false ]; then
+  echo "$arg is not a valid option"
+  echo "valid options include:"
+  echo "${options[@]}"; exit
+fi
+
+case $arg in
+  p1)
+    drush site:install standard --site-name="ProDev Sprint" -y
+    drush en ca_custom_block_react_timer
+    drush cr
+  ;;
+  *)
+    echo "Invalid option"
+  ;;
+esac
 echo "Site install complete."
