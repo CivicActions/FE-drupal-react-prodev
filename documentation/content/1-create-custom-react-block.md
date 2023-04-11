@@ -15,10 +15,25 @@ The goal for this exercise is to create a custom block route in Drupal that load
 
 ## Helpful Resources
 
-- Tutorial: [Connect React to a Drupal Theme or Module](https://drupalize.me/tutorial/connect-react-drupal-theme-or-module?p=3253) by [Drupalize.me](https://drupalize.me/)
-- Blog Post: [Recipe for Embedded React Component](https://www.mediacurrent.com/) by [MediaCurrent](https://www.mediacurrent.com/)
+- Tutorial: [Connect React to a Drupal Theme or Module](https://drupalize.me/tutorial/connect-react-drupal-theme-or-module?p=3253)
+- Blog Post: [Recipe for Embedded React Component](https://www.mediacurrent.com/)
 - Documentation: [Creating Custom Blocks in Drupal](https://www.drupal.org/docs/creating-modules/creating-custom-blocks)
 - Documentation: [Adding assets (CSS, JS) to a Drupal module via *.libraries.yml](https://www.drupal.org/docs/develop/creating-modules/adding-assets-css-js-to-a-drupal-module-via-librariesyml)
+
+## Setup Instructions
+
+Skip to step 3 if Docker and DDEV are already installed.
+
+1. [Install Docker or Colima](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/)
+2. [Install DDEV](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
+3. Clone this repo to your local machine
+4. `cd` to the root of the project
+5. Run the setup commands below
+```bash
+ddev start
+ddev composer install
+ddev site-install p1
+```
 
 
 

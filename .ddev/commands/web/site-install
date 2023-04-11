@@ -10,7 +10,7 @@ options=('p1')
 found=false
 
 for i in "${options[@]}"; do
-  if [ $arg = "$i" ]; then
+  if [ "$arg" = "$i" ]; then
     found=true
   fi
 done
