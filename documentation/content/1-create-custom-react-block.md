@@ -10,7 +10,7 @@ The goal for this exercise is to create a custom block route in Drupal that load
 
 - A new Drupal module has been created 
 - The new module contains a custom block plugin or controller
-- A react app been added to the module
+- A React app been added to the module
 - The react app is added to the custom block or route and is displayed on a page
 
 ## Helpful Resources
@@ -68,7 +68,7 @@ Build the module frontend and export compiled React app to the `dist` folder
 ```bash
 ddev build-timer-block
 ```
-Run and Frontend tests for the React Timer app
+Run all Frontend tests for the React Timer app
 ```bash
 ddev test-timer-block
 ```
