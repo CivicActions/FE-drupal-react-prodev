@@ -28,13 +28,50 @@ Skip to step 3 if Docker and DDEV are already installed.
 2. [Install DDEV](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
 3. Clone this repo to your local machine
 4. `cd` to the root of the project
-5. Run the setup commands below
+5. Run the setup commands below in you terminal
 ```bash
 ddev start
 ddev composer install
 ddev site-install p1
 ```
+Run the launch command to open the site unauthenticated
+```bash
+ddev launch
+```
+Or run the drush user login command to generate a one-time login
+```bash
+ddev drush uli
+```
 
+## Implementation Details
+
+This solution adds a React timer widget as a drupal block. The block should display in the sidebar of each page. The code for this solution is all contained in a custom module located at:
+```
+/web/modules/custom/ca_custom_block_react_timer
+```
+The frontend react app code is located at:
+```
+/web/modules/custom/ca_custom_block_react_timer/src/frontend
+```
+The compiled frontend that gets sent to the browser is located at:
+```
+/web/modules/custom/ca_custom_block_react_timer/dist
+```
+## Project shortcuts
+There are a few custom DDEV commands provided for convenience
+
+Install Drupal, enable the ca_custom_block_react_timer module, add the custom block to the sidebar region, and clear drupal cache.
+```bash
+ddev site-install p1
+```
+Build the module frontend and export compiled React app to the `dist` folder
+```bash
+ddev build-timer-block
+```
+Run and Frontend tests for the React Timer app
+```bash
+ddev test-timer-block
+```
 
 
 
