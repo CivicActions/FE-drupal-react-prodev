@@ -1,0 +1,26 @@
+.ca-block-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.ca-block-timer > div {
+  padding: 10px;
+}
+
+.timer-controls > button {
+  min-width: 90px;
+  margin-inline: 1px;
+}
+
+.current-time {
+  font-family: "Courier New", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.previous-time {
+  font-size: 1.2em;
+}

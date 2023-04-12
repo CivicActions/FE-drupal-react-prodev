@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ca_custom_block_react_timer
+  theme:
+    - olivero
+id: reacttimerblock
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: ca_custom_block_react_timer_example
+settings:
+  id: ca_custom_block_react_timer_example
+  label: 'React Timer Block'
+  label_display: visible
+  provider: ca_custom_block_react_timer
+visibility: {  }

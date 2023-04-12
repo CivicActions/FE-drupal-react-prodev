@@ -16,6 +16,11 @@
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
 /vendor/
+.idea
+web/sites/default/files/css
+web/sites/default/files/js
+web/sites/default/files/php
+web/sites/default/files/twig
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php

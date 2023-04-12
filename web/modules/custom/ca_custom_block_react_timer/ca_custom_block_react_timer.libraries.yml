@@ -1,0 +1,9 @@
+ca_custom_block_react_timer:
+  js:
+    dist/timer.js:
+      preprocess: false
+      attributes:
+        type: module
+  css:
+    theme:
+      dist/assets/timer.css: {}
