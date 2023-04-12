@@ -1,6 +1,6 @@
 # Drupal + React Decoupled ProDev Sprint 
 
-This repo contains the code and instructions related to our Frontend ProDev sprint for exploring topics around decoupled React and Drupal. Each week will focus on a particular problem or use case around duseing Drupal and React together. The goals for each week will be to explore and research a given problem and to implement a working solution. 
+This repo contains the code and instructions related to our Frontend ProDev sprint for exploring topics around decoupled React and Drupal. Each week will focus on a particular problem or use case around using Drupal and React together. The goals for each week will be to explore and research a given problem and to implement a working solution. 
 
 Each week will have its own set of instructions along with a detailed description of the problems we are attempting to solve. There will be links to blog posts and external documentation that may be helpful to explore. There will also be a working solution published to a branch of this repository along with documentation. 
 
