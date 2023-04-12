@@ -45,7 +45,10 @@ ddev drush uli
 
 ## Implementation Details
 
-This solution adds a React timer widget as a drupal block. The block should display in the sidebar of each page. The code for this solution is all contained in a custom module located at:
+This solution adds a React timer widget as a drupal block. 
+<img alt="Screenshot of an installed drupal site home page showing a timer block widget in the sidebar" src="../assests/react-timer-block-shortcut.png" width="66%" height="66%"/>
+
+The block should display in the sidebar of each page. The code for this solution is all contained in a custom module located at:
 ```
 /web/modules/custom/ca_custom_block_react_timer
 ```
