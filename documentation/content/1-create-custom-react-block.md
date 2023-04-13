@@ -43,13 +43,7 @@ Or run the drush user login command to generate a one-time login
 ddev drush uli
 ```
 
-## Solution Media
-
-Solution Overview Walkthrough Video
-
-[![Screen shot of Youtube video](../assests/part1-walkthrough-video-image.png)](https://www.youtube.com/watch?v=n2vvoBUpZyg)
-
-## Implementation Details
+## Solution Overview
 
 This solution adds a React timer widget as a drupal block. 
 <img alt="Screenshot of an installed drupal site home page showing a timer block widget in the sidebar" src="../assests/react-timer-block-shortcut.png" width="66%" height="66%"/>
@@ -66,6 +60,11 @@ The compiled frontend that gets sent to the browser is located at:
 ```
 /web/modules/custom/ca_custom_block_react_timer/dist
 ```
+
+### Walkthrough Video
+
+[![Screen shot of Youtube video](../assests/part1-walkthrough-video-image.png)](https://www.youtube.com/watch?v=n2vvoBUpZyg)
+
 ## Project shortcuts
 There are a few custom DDEV commands provided for convenience
 
