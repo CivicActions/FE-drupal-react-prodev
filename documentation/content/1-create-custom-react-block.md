@@ -47,7 +47,7 @@ ddev drush uli
 
 Solution Overview Walkthrough Video
 
-[![Screen shot of Youtube video](https://i9.ytimg.com/vi_webp/n2vvoBUpZyg/mq3.webp?sqp=COzS26EG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gPSgTMA8=&rs=AOn4CLDrsT3L3yzBk8Y4tKlXeGhl8qURvA)](https://www.youtube.com/watch?v=n2vvoBUpZyg)
+[![Screen shot of Youtube video](../assests/part1-walkthrough-video-image.png)](https://www.youtube.com/watch?v=n2vvoBUpZyg)
 
 ## Implementation Details
 
