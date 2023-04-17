@@ -13,3 +13,51 @@ This course is intended to be as flexible as possible and to be approachable to 
 ## Sprint Content
 
 - Part 1: [Create a Custom React Block or Route](documentation/content/1-create-custom-react-block.md)
+
+## Development Environment Setup
+
+To set up this site locally and work through the content, you will need to setup ddev and NodeJs on your local machine and have access to a code editor. 
+
+### DDEV
+
+Follow the instructions on the DDEV getting started page that match your operating system.
+
+[Install DDEV](https://ddev.com/get-started/)
+
+If you have an older version of DDEV installed, then you may need to update before you can run the solutions. DDEV version v1.21.6+ is recommended for this project. 
+
+## NodeJs
+
+You will need to download and install NodeJs if it's not already installed on you system.
+
+[Install NodeJs](https://nodejs.org/en)
+
+Node version 16.15.0+ is recommended for this project.
+
+## Editors
+
+You may use any code editor for this course, but PhpStorm and VScode are both good options.
+
+### PhpStorm
+
+[Download PhpStorm](https://www.jetbrains.com/phpstorm/download/#section=mac)
+
+[PhpStorm Drupal Documentation](https://www.jetbrains.com/help/phpstorm/drupal-support.html)
+
+### VSCode
+
+[Download VSCode](https://code.visualstudio.com/)
+
+[Configuring VSCode for Drupal](https://www.drupal.org/docs/develop/development-tools/editors-and-ides/configuring-visual-studio-code)
+
+
+
+
+
+
+
+
+
+
+
+
