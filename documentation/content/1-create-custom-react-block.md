@@ -63,7 +63,7 @@ The compiled frontend that gets sent to the browser is located at:
 
 ### Walkthrough Video
 
-[![Screen shot of Youtube video](../assests/part1-walkthrough-video-image.png)](https://www.youtube.com/watch?v=n2vvoBUpZyg)
+[![Screen shot of Youtube video](../assests/part1-walkthrough-video-image.png)](https://www.youtube.com/watch?v=-jhgoW1CitA)
 
 ## Project shortcuts
 There are a few custom DDEV commands provided for convenience
