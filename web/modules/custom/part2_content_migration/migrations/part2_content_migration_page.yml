@@ -1,0 +1,37 @@
+# Migration configuration for page content.
+id: part2_content_migration_page
+label: 'Migrate Pages'
+migration_tags:
+  - PageContent
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      id: 1
+      title: "Cliche Wayfarers Adaptogen"
+      body: "I'm baby tumblr cliche wayfarers adaptogen health goth kale chips organic pinterest jawn 8-bit you probably haven't heard of them ugh yes plz. Pork belly listicle lumbersexual, bitters gastropub direct trade pinterest disrupt sustainable offal roof party. Bushwick affogato big mood Brooklyn, synth knausgaard bruh chillwave prism keytar bespoke stumptown JOMO man braid mlkshk. Farm-to-table meggings grailed cliche you probably haven't heard of them single-origin coffee. Hella gatekeep tilde affogato irony chia, pok pok four loko vice pug bodega boys af authentic DIY ennui."
+      show_react_app_1: 1
+      show_react_app_2: 1
+    -
+      id: 2
+      title: "Narwhal Kickstarter Normcore"
+      body: "Narwhal kickstarter normcore DSA wayfarers chia marxism grailed. Blue bottle butcher tousled, same leggings chartreuse kickstarter cupping gorpcore tofu hashtag kale chips man bun sartorial actually. Try-hard sriracha iceland photo booth taiyaki. Locavore marfa hell of, salvia microdosing crucifix humblebrag ascot. Helvetica adaptogen before they sold out master cleanse four dollar toast meh poutine same vaporware iceland scenester ethical JOMO. Tattooed chicharrones big mood gatekeep cupping kale chips blue bottle meggings migas fingerstache. Dreamcatcher typewriter iceland, live-edge art party marxism vaporware man bun."
+      show_react_app_1: 1
+      show_react_app_2: 0
+    -
+      id: 3
+      title: "Ethical Scenester iPhone"
+      body: "Farm-to-table cold-pressed ethical scenester iPhone. Chicharrones gastropub 8-bit pickled cray stumptown. Sus shaman marfa, meh pabst master cleanse lyft fixie palo santo umami direct trade praxis fit marxism paleo. Slow-carb migas pitchfork plaid, ascot unicorn everyday carry flannel bodega boys coloring book echo park vape fam banjo vexillologist. Bruh trust fund kinfolk letterpress humblebrag swag beard before they sold out retro williamsburg pinterest stumptown banjo slow-carb fanny pack."
+      show_react_app_1: 0
+      show_react_app_2: 1
+  ids:
+    id:
+      type: integer
+process:
+  title: title
+  body: body
+  field_show_react_app_1: show_react_app_1
+  field_show_react_app_2: show_react_app_2
+destination:
+  plugin: entity:node
+  default_bundle: page

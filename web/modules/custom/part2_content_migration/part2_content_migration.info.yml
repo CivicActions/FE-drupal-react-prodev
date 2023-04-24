@@ -1,0 +1,7 @@
+name: part2-content-migration
+type: module
+description: Configures fields and imports content
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - migrate
