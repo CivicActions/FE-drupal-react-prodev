@@ -1,0 +1,18 @@
+#!/bin/bash
+
+## Description: Build CA Custom Block react timer FE app.
+## Usage: build-react-theme
+
+set -eu -o pipefail
+
+THEME_REACT_DIR='web/themes/custom/ca_custom_react_theme/react'
+
+cd $THEME_REACT_DIR || exit
+
+npm --loglevel=error install
+
+npm run build --force
+
+drush cr
+
+echo "React Theme build complete."

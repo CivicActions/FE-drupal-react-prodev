@@ -1,0 +1,29 @@
+name: ca_custom_react_theme
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  breadcrumb: 'Breadcrumb'
+libraries:
+  - ca_custom_react_theme/base
+  - ca_custom_react_theme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - ca_custom_react_theme/user
+  core/drupal.dropbutton:
+    - ca_custom_react_theme/dropbutton
+  core/drupal.dialog:
+    - ca_custom_react_theme/dialog
+  file/drupal.file:
+    - ca_custom_react_theme/file
+  core/drupal.progress:
+    - ca_custom_react_theme/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.7'

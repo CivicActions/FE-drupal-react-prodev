@@ -1,0 +1,18 @@
+uuid: 2e69cc7b-d58f-4bca-9126-1ec3e5d73ed0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_show_react_app_2
+field_name: field_show_react_app_2
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

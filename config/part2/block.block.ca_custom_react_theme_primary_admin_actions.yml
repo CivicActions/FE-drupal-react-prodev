@@ -1,0 +1,20 @@
+uuid: bfb13b1c-0eae-44b7-9e18-f218e4a715d3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ca_custom_react_theme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: ca_custom_react_theme_primary_admin_actions
+theme: ca_custom_react_theme
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

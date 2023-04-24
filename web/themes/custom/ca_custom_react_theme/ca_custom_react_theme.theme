@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+/**
+ * Implements hook_preprocess_image_widget().
+ */
+function ca_custom_react_theme_preprocess_image_widget(array &$variables) {
+  $data = &$variables['data'];
+
+  // This prevents image widget templates from rendering preview container HTML
+  // to users that do not have permission to access these previews.
+  // @todo revisit in https://drupal.org/node/953034
+  // @todo revisit in https://drupal.org/node/3114318
+  if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
+    unset($data['preview']);
+  }
+}
+
+/**
+ * Adds react libraries to page layout when current page is a page node and
+ * one of the show_react_app boolean fields is set to true
+ *
+ * Implements hook_preprocess().
+ */
+function ca_custom_react_theme_preprocess_page(&$variables) {
+  if (isset($variables['node']) && $variables["node"]->bundle() === 'page') {
+    /** @var \Drupal\node\NodeInterface $variables["node"] */
+    if (!!$variables['node']->get('field_show_react_app_1')->getString()) {
+      $variables['#attached']['library'][] = 'ca_custom_react_theme/react-app-1';
+      $variables['show_react_app_1'] = true;
+    }
+
+    if (!!$variables['node']->get('field_show_react_app_2')->getString()) {
+      $variables['#attached']['library'][] = 'ca_custom_react_theme/react-app-2';
+      $variables['show_react_app_2'] = true;
+    }
+  }
+}

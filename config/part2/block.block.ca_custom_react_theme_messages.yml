@@ -1,0 +1,22 @@
+uuid: f102c62a-a9fb-49d5-bd98-fdd3355acedd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ca_custom_react_theme
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: ca_custom_react_theme_messages
+theme: ca_custom_react_theme
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
