@@ -1,0 +1,23 @@
+uuid: 1cd5e48c-2b65-4f6e-b17b-95b2ab4213ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_react_app_1
+    - node.type.page
+id: node.page.field_show_react_app_1
+field_name: field_show_react_app_1
+entity_type: node
+bundle: page
+label: 'Show React App 1'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'on'
+  off_label: 'off'
+field_type: boolean
