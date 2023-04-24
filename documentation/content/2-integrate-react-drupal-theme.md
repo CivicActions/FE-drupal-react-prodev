@@ -4,7 +4,7 @@
 
 ## Summary
 
-The goal for this exercise is to create a custom drupal theme that includes a React app as part of its codebase. The React app will be stored in its own directory within the theme and will be attached to a theme template using libraries.yml.
+The goal for this exercise is to create a custom Drupal theme that includes a React app as part of its codebase. The React app will be stored in its own directory within the theme and will be attached to a theme template using libraries.yml.
 
 For an additional challenge, you may have this app display conditionally based on the value of a custom field on a content type. You can also try adding a second React app and configuring the apps to share dependencies between them.
 
