@@ -6,7 +6,7 @@
 set -eu -o pipefail
 
 arg="${1:-null}"
-options=('p1')
+options=('p1' 'p2')
 found=false
 
 for i in "${options[@]}"; do
@@ -25,6 +25,16 @@ case $arg in
   p1)
     drush site:install standard --site-name="ProDev Sprint" -y
     drush en ca_custom_block_react_timer
+    drush cr
+  ;;
+  p2)
+    drush site:install standard --site-name="ProDev Sprint" -y
+    drush cset system.site uuid a3b8829a-cfde-432e-9520-d829213a62ac -y
+    drush theme:enable ca_custom_react_theme
+    drush cset system.theme default ca_custom_react_theme -y
+    drush cim --source="/var/www/html/config/part2" --partial -y
+    drush en part2_content_migration
+    drush migrate:import part2_content_migration_page
     drush cr
   ;;
   *)
