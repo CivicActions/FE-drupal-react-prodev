@@ -14,6 +14,7 @@ This course is intended to be as flexible as possible and to be approachable to 
 
 - Part 1: [Create a Custom React Block or Route](documentation/content/1-create-custom-react-block.md)
 - Part 2: [Integrate React with a Custom Drupal Theme](documentation/content/2-integrate-react-drupal-theme.md)
+- Part 3: [Data Fetching in Decoupled React + Drupal](documentation/content/3-data-fetching.md)
 
 ## Development Environment Setup
 
